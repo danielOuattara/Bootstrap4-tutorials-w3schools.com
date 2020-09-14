@@ -1,0 +1,189 @@
+<!-----------------------------------------
+Daniel OUATTARA- daniel.ouattara_AT_gmx.com
+24 06 2020
+Boostrap 4 Tutorial : Objects
+https://www.w3schools.com/bootsrap4/
+------------------------------------------->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Boostrap 4 Containers</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <h1>Boostrap 4 Containers.</h1><hr/>
+
+
+<!-- Containers
+================
+
+You learned from the previous chapter that Bootstrap requires a containing 
+element to wrap site contents.
+
+Containers are used to pad the content inside of them, and there are two 
+container classes available:
+
+    1- '.container' class provides a responsive fixed width container
+    2- '.container-fluid' class provides a full width container, 
+         spanning the entire width of the viewport
+
+
+Fixed Container
+===============
+
+Use the '.container' class to create a responsive, 'fixed-width 'container.
+
+Note:  Its width (max-width) will change on different screen sizes:
+-----
+-----------------------------------------------------------------
+           Extra small   Small    Medium   Large     Extra large
+             <576px 	 ≥576px   ≥768px   ≥992px    ≥1200px
+-----------------------------------------------------------------
+ max-width 	 100% 	     540px 	   720px   960px 	  1140px
+-----------------------------------------------------------------
+
+Open the example below and resize the browser window to see that the 
+container width will change at different breakpoints:                -->
+
+
+    <div class="container">
+        <h2>My Bootstrap 4 Page</h2>
+        <p>This part is inside a .container class.</p> 
+        <p>The .container class provides a responsive fixed width container.</p>
+        <p>Resize the browser window to see that its width (max-width) will change at different breakpoints.</p>
+    </div><hr/>
+
+
+<!-- Fluid Container
+=====================
+
+Use the '.container-fluid' class to create a full width container, 
+that will always span the entire width of the screen (width is always 100%): -->
+
+
+    <div class="container-fluid">
+        <h2>My Bootstrap 4 Page</h2>
+        <p>This part is inside a .container class.</p> 
+        <p>The .container class provides a responsive fixed width container.</p>
+        <p>Resize the browser window to see that its width (max-width) will change at different breakpoints.</p>
+    </div><hr/>
+
+
+<!-- Container Padding
+======================
+
+By default, containers have 15px left and right padding, with no top or 
+bottom padding. Therefore, we often use spacing utilities, such as extra
+padding and margins to make them look even better. For example, '.pt-3'
+ means "add a top padding of 16px": -->
+
+        <div class="container-fluid pt-3">
+            <h2>Modified container top padding Page</h2>
+            <p>This container has a top padding of 16 pixels (.pt-3).</p>
+            <p>Try to remove the .pt-3 class to see the difference.</p>
+        </div><hr/>
+
+
+<!-- Container Border and Color
+================================
+
+Other utilities, such as 'borders' and 'colors', are also often used 
+together with containers: -->
+
+      <div class="container p-3 my-3 border">
+          <h2>Bootstrap 4: padding, margin, border</h2>
+          <p>This container has some extra padding and margins and a border.</p>
+      </div>
+
+
+      <div class="container p-3 my-3 bg-dark text-white">
+        <h2>Bootstrap 4: padding, margin, background-color, font-color</h2>
+        <p>This container has some extra padding and margin, a black 
+            background color and white text color.</p>
+    </div>
+
+
+    <div class="container p-3 my-3 bg-primary text-white">
+        <h2>Bootstrap 4: padding, margin, border</h2>
+        <p>This container has some extra padding and margin, a blue 
+            background-color and a white text color.</p>
+    </div>
+
+<!--NOTE:  You will learn much more about colors and border utilities, 
+    -----  in our BS4 Colors Chapter and BS4 Utilities Chapter.
+
+
+Responsive Containers
+======================
+
+You can also use the '.container-sm|md|lg|xl' classes to create responsive 
+containers.
+
+The 'max-width' of the container will change on different screen 
+sizes/viewports:
+
+Class 	Extra small  Small  Medium Large Extra Large
+       <576px 	Small
+≥576px 	Medium
+≥768px 	Large
+≥992px 	Extra large
+≥1200px
+
+
+-----------------------------------------------------------------------
+Class            Extra small  Small    Medium   Large    Extra large
+                 <576px 	  ≥576px   ≥768px   ≥992px   ≥1200px
+-----------------------------------------------------------------------
+.container-sm 	 100% 	      540px    720px 	960px 	 1140px
+-----------------------------------------------------------------------
+.container-md 	 100% 	      100% 	   720px 	960px 	 1140px
+-----------------------------------------------------------------------
+.container-lg 	 100% 	      100% 	   100% 	960px 	 1140px
+-----------------------------------------------------------------------
+.container-xl 	 100% 	      100% 	   100% 	100% 	 1140px
+------------------------------------------------------------------------>
+
+
+        <div class="container">
+            <h2>Responsive Containers</h2>
+            <p>Resize the browser window to see the effect.</p>
+        </div>
+        
+        <div class="container-sm border">.container-sm
+            <h2>Responsive Containers: -sm</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing 
+                elit...</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation 
+                ullamco laboris...</p>
+        </div>
+        <div class="container-md mt-3 border">.container-md
+            <h2>Responsive Containers: -md</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing 
+                elit...</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation 
+                ullamco laboris...</p>
+        </div>
+        <div class="container-lg mt-3 border">.container-lg
+            <h2>Responsive Containers: -lg</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing 
+                elit...</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation 
+                ullamco laboris...</p>
+        </div>
+        <div class="container-xl mt-3 border">.container-xl
+            <h2>Responsive Containers: -xl</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing 
+                elit...</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation 
+                ullamco laboris...</p>
+        </div>
+
+  </body>
+
+</html>
