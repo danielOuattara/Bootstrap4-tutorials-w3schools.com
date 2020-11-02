@@ -1,0 +1,160 @@
+<!-----------------------------------------
+Daniel OUATTARA- daniel.ouattara_AT_gmx.com
+24 06 2020
+Boostrap 4 Tutorial : color
+https://www.w3schools.com/bootsrap4/
+------------------------------------------->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Boostrap 4 Buttons</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width
+     initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+      <h1>Boostrap 4 Buttons</h1>
+
+<!-- Button Styles
+===================
+
+Bootstrap 4 provides different styles of buttons: -->
+
+<div class="container border border-dark p-5 rounded mb-3">
+    <h2>Button Styles</h2>
+    <button type="button" class="btn">Basic</button>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn bt-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-link">Link</button>
+</div>
+
+
+<!-- The button classes can be used on <a>, <button>, or <input> elements: -->
+
+    <div class="container border border-dark p-5 rounded mb-3">
+        <h2>Button Element</h2>
+        <a href="#" class="btn btn-info" role="button">Link Button</a>
+        <button type="button" class="btn btn-info" >Button</button>
+        <input type="button" class="btn btn-info" value="Input Button">
+        <input type="button" class="btn btn-info" value="Submit Button" >
+    </div>
+
+<!-- Button Outline
+===================
+
+Bootstrap 4 provides eight outline/bordered buttons: -->
+
+<div class="container border border-dark p-5 rounded mb-3">
+    <h2>Button Outline</h2>
+
+    <button type="button" class="btn btn-outline-primary">Primary</button>
+    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+    <button type="button" class="btn btn-outline-success">Success</button>
+    <button type="button" class="btn btn-outline-info">Info</button>
+    <button type="button" class="btn btn-outline-warning">Warning</button>
+    <button type="button" class="btn btn-outline-danger">Danger</button>
+    <button type="button" class="btn btn-outline-dark">Dark</button>
+    <button type="button" class="btn btn-outline-light text-dark">Light</button>
+</div>
+
+
+<!-- Button Sizes
+==================
+
+Use the '.btn-lg' class for large buttons or '.btn-sm' class for small buttons: -->
+
+<div class="container border border-dark p-5 rounded mb-3">
+    <h2>Button Sizes</h2>
+
+     <button type="button" class="btn btn-secondary btn-lg">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-outline-primary btn-sm">Primary</button>
+    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+    <button type="button" class="btn btn-outline-success btn-lg">Success</button>
+    <button type="button" class="btn btn-outline-dark">Dark</button>
+</div>
+
+
+<!-- Block Level Buttons
+=========================
+
+Add class '.btn-block' to create a block level button that spans the entire 
+width of the parent element. -->
+
+<div class="container border border-dark p-5 rounded mb-3">
+    <h2>BLock Level Buttons </h2>
+
+     <button type="button" class="btn btn-secondary btn-lg btn-block">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-outline-primary btn-sm btn-block">Primary</button>
+    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+    <button type="button" class="btn btn-outline-success btn-lg btn-block">Success</button>
+    <button type="button" class="btn btn-outline-dark btn-block">Dark</button>
+</div>
+
+
+<!-- Active/Disabled Buttons
+=============================
+
+A button can be set to an active (appear pressed) or a disabled (unclickable) state
+
+The class '.active' makes a button appear pressed, and the disabled attribute makes 
+a button unclickable. 
+
+Note that <a> elements do not support the disabled attribute and must therefore use 
+    the '.disabled' class to make it visually appear disabled. -->
+
+    <div class="container border border-dark p-5 rounded mb-3">
+        <h2>Actived/ Disabled Buttons </h2>
+    
+         <button type="button" class="btn btn-secondary btn-lg btn-block active">Secondary</button>
+         <button type="button" class="btn btn-outline-danger btn-lg btn-block">Secondary</button>
+         <button type="button" class="btn btn-outline-danger btn-lg btn-block active">Secondary</button>
+        <button type="button" class="btn btn-success btn-block" disabled>Success</button>
+
+        <a href="#" class="btn bnt-primary btn-primary ">Active Link</a>
+        <a href="#" class="btn bnt-primary btn-primary disabled">Disabled Link</a>
+    </div>
+
+
+<!-- Spinner Buttons
+===================== -->
+
+<div class="container border border-dark p-5 rounded mb-3">
+    <h2>Spinner Buttons</h2>
+    <button type="bouton" class="btn btn-success btn-lg"> 
+        <span class="spinner-border"></span> Loading</button>
+
+    <button type="bouton" class="btn btn-success btn-lg"> 
+        <span class="spinner-border spinner-border-sm"></span> Loading</button>
+
+    <button type="bouton" class="btn btn-success btn-lg"> 
+        <span class="spinner-border spinner-grow"></span> Loading</button>
+
+    <button type="bouton" class="btn btn-success btn-lg"> 
+        <span class="spinner-border spinner-grow-sm"></span> Loading</button>
+
+    <button type="bouton" class="btn btn-success btn-lg" disabled> 
+        <span class="spinner-border"></span> Loading</button>
+
+    <button type="bouton" class="btn btn-success btn-lg"> 
+        <span class="spinner-border"></span> Loading</button>
+
+
+</div>
+    
+
+
+</body>
+</html>
