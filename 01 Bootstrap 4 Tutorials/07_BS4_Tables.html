@@ -24,7 +24,7 @@ A basic Bootstrap 4 table has a light padding and horizontal dividers.
 
 The ".table" class adds basic styling to a table: -->
 
-<div class="container">
+<div class="container  border rounded border-dark p-5">
     <h2>Basic Table</h2>
     <p>The ".table" class add basic styling( light padding and horizontal dividers) to a table</p>
     <table class="table">
@@ -61,7 +61,7 @@ The ".table" class adds basic styling to a table: -->
 
 The ".table-striped" class adds zebra-stripes to a table -->
 
-<div class="container">
+<div class="container  border rounded border-dark p-5">
     <h2>Striped Rows</h2>
 
     <table class="table table-striped">
@@ -97,7 +97,7 @@ The ".table-striped" class adds zebra-stripes to a table -->
 ===================
 The ".table-bordered" class adds borders  on all sides of the table and the cells-->
 
-<div class="container">
+<div class="container  border rounded border-dark p-5">
     <h2>Borderded Table</h2>
         
     <table class="table table-bordered">
@@ -134,7 +134,7 @@ The ".table-bordered" class adds borders  on all sides of the table and the cell
 
 The ".table-hover" class adds a hover effect (grey background color) on table rows: -->
 
-<div class="container">
+<div class="container  border rounded border-dark p-5">
     <h2>Hover Rows</h2>
         
     <table class="table table-hover">
@@ -173,7 +173,7 @@ The ".table-hover" class adds a hover effect (grey background color) on table ro
 The ".table-dark" class adds a black background to the table: -->
 
 
-<div class="container">
+<div class="container  border rounded border-dark p-5">
     <h2>Black/ Dark Table</h2>
         
     <table class="table table-dark">
@@ -210,7 +210,7 @@ The ".table-dark" class adds a black background to the table: -->
 
 Combine ".table-dark" and ".table-striped" to create a dark, striped table: -->
 
-<div class="container">
+<div class="container  border rounded border-dark p-5">
     <h2>Black/ Dark  and Striped Table</h2>
         
     <table class="table table-dark table-striped">
@@ -247,7 +247,7 @@ Combine ".table-dark" and ".table-striped" to create a dark, striped table: -->
 
 The ".table-hover" class adds a hover effect (grey background color) on table rows: -->
 
-<div class="container">
+<div class="container  border rounded border-dark p-5">
     <h2>Hoverable Dark Table</h2>
         
     <table class="table table-dark table-hover">
@@ -284,7 +284,7 @@ The ".table-hover" class adds a hover effect (grey background color) on table ro
 
 The .table-hover class remove table from a table -->
 
-<div class="container">
+<div class="container  border rounded border-dark p-5">
     <h2>Hoverable Dark Table</h2>
         
     <table class="table table-borderless">
@@ -323,7 +323,7 @@ The .table-hover class remove table from a table -->
 Contextual classes can be used to color the whole table (<table>), 
 the table rows (<tr>) or table cells (<td>). -->
 
-    <div class="container">
+    <div class="container  border rounded border-dark p-5">
         <h2>Contextual Classes</h2>
         <table class="table">
           <thead>
@@ -410,7 +410,7 @@ Class        	 Description
 The ".thead-dark" class adds a black background to table headers, 
 and the ".thead-light" class adds a grey background to table headers: -->
 
-<div class="container">
+<div class="container  border rounded border-dark p-5">
     <h2>Table Head Colors</h2>
     <table class="table">
       <thead class="thead-dark">
@@ -438,8 +438,66 @@ and the ".thead-light" class adds a grey background to table headers: -->
         </tr>
       </tbody>
     </table>
+
+    
     <table class="table">
       <thead class="thead-light">
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>john@example.com</td>
+        </tr>
+        <tr>
+          <td>Mary</td>
+          <td>Moe</td>
+          <td>mary@example.com</td>
+        </tr>
+        <tr>
+          <td>July</td>
+          <td>Dooley</td>
+          <td>july@example.com</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <table class="table">
+      <thead class="bg-info">
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>john@example.com</td>
+        </tr>
+        <tr>
+          <td>Mary</td>
+          <td>Moe</td>
+          <td>mary@example.com</td>
+        </tr>
+        <tr>
+          <td>July</td>
+          <td>Dooley</td>
+          <td>july@example.com</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <table class="table">
+      <thead class="bg-success">
         <tr>
           <th>Firstname</th>
           <th>Lastname</th>
@@ -472,7 +530,7 @@ and the ".thead-light" class adds a grey background to table headers: -->
 
 The ".table-sm" class makes the table smaller by cutting cell padding in half: -->
       
-<div class="container">
+<div class="container  border rounded border-dark p-5">
     <h2>Small Table</h2>
     <table class="table table-bordered table-sm">
       <thead>
@@ -500,7 +558,7 @@ The ".table-sm" class makes the table smaller by cutting cell padding in half: -
         </tr>
       </tbody>
     </table>
-  </div>
+  </div><hr/>
 
   <!-- Responsive Tables
 =========================
@@ -508,7 +566,7 @@ The ".table-sm" class makes the table smaller by cutting cell padding in half: -
 The ".table-responsive" class adds a scrollbar to the table when 
 needed (when it is too big horizontally): -->
 
-<div class="container">
+<div class="container  border rounded border-dark p-5">
     <h2>Responsive Table</h2>    
     <div class="table-responsive">
       <table class="table table-bordered">
@@ -560,7 +618,7 @@ needed (when it is too big horizontally): -->
         </tbody>
       </table>
     </div>
-  </div>
+  </div><hr/>
 
 <!-- You can also decide when the table should get a scrollbar, depending on screen width:
 
@@ -571,7 +629,7 @@ Class 	                Screen width
 .table-responsive-lg 	< 992px
 .table-responsive-xl 	< 1200px -->
 
-<div class="container">
+<div class="container  border rounded border-dark p-5">
     <h2>Responsive Table</h2>
     <p>Resize the browser window to see the effect.</p>
     <div class="table-responsive-sm">          

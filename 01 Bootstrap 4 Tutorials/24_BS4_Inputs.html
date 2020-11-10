@@ -1,0 +1,299 @@
+<!-----------------------------------------
+Daniel OUATTARA- daniel.ouattara_AT_gmx.com
+03 11 2020
+Boostrap 4 Tutorial : color
+https://www.w3schools.com/bootsrap4/
+------------------------------------------->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Boostrap 4 Forms Inputs</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width
+     initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+      <h1>Boostrap 4 Forms Input</h1>
+
+
+<!-- Supported Form Controls
+============================
+
+Bootstrap supports the following form controls:
+
+    > input
+    > textarea
+    > checkbox
+    > radio
+    > select
+
+
+Bootstrap Input
+================
+
+Bootstrap supports all the HTML5 input types: text, password, datetime, 
+datetime-local, date, month, time, week, number, email, url, search, tel, and color.
+
+Note: Inputs will NOT be fully styled if their type is not properly declared!
+
+The following example contains 2 input elements:
+- type="text" 
+- type="password"
+
+As we mentioned in the Forms chapter, we use the ".form-control" class to style inputs 
+with full-width and proper padding, etc:                                            -->
+
+<div class="container border border-dark p-5 rounded mb-3">
+    <h2>Bootstrap Input</h2>
+
+    <div class="form-group">
+        <label for="user">Name :</label>
+        <input type="text" class="form-control" id="user">
+    </div>
+
+    <div class="form-group">
+        <label for="password" id="password">Password :</label>
+        <input type="password" class="form-control" id="password"> 
+    </div>
+</div><hr/>
+
+
+<div class="container border border-dark p-5 rounded mb-3">
+    <h2>Bootstrap Input</h2>
+    <form action="./action_page.php">
+        <div class="form-group">
+            <label for="user">Name :</label>
+            <input type="text" class="form-control" id="user">
+        </div>
+    
+        <div class="form-group">
+            <label for="password" id="password">Password :</label>
+            <input type="password" class="form-control" id="password"> 
+        </div>
+        <div class="form-group">
+           
+            <input type="submit" class="form-control btn btn-primary"> 
+        </div>
+
+
+    </form>
+
+
+</div><hr/>
+
+
+<!-- Bootstrap Textarea
+=======================
+
+The following example contains a textarea: -->
+
+<div class="container border border-dark p-5 rounded mb-3">
+    <h2>Bootstrap Textarea</h2>
+
+    <div class="form-group">
+        <label for="comment">Comment :</label>
+        <textarea type="textarea" rows="5" class="form-control" id="comment"></textarea>
+    </div>
+</div>
+
+
+<!-- Bootstrap Checkboxes
+==========================
+
+Checkboxes are used if you want the user to select any number of options from 
+a list of preset options.
+
+The following example contains three checkboxes. The last option is disabled: -->
+
+<div class="container border border-dark p-5 rounded mb-3">
+    <h2>Bootstrap Checkboxes</h2>
+
+        <div class="form-check">
+            <label for="comment" class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="">option 1
+            </label>
+        </div>
+
+        <div class="form-check">
+            <label for="comment" class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="">option 2
+            </label>
+        </div>
+
+        <div class="form-check">
+            <label for="comment" class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="">option 3
+            </label>
+        </div>
+        <div class="form-check">
+            <label for="comment">
+                <input type="checkbox" class="form-check-input" value="" disabled>option 4
+            </label>
+        </div>
+</div>
+
+
+<!-- Inline Checkboxes
+======================
+
+Use the ".form-check-inline" class if you want the checkboxes to appear on the same line: -->
+
+
+<div class="container border border-dark p-5 rounded mb-3">
+    <h2>Bootstrap Checkboxes</h2>
+
+        <div class="form-check-inline">
+            <label for="comment" class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="">option 1
+            </label>
+        </div>
+
+        <div class="form-check-inline">
+            <label for="comment" class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="">option 2
+            </label>
+        </div>
+
+        <div class="form-check-inline">
+            <label for="comment" class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="">option 3
+            </label>
+        </div>
+        <div class="form-check-inline">
+            <label for="comment">
+                <input type="checkbox" class="form-check-input" value="" disabled>option 4
+            </label>
+        </div>
+</div>
+
+
+<!-- Bootstrap Radio Buttons
+=============================
+
+Radio buttons are used if you want to limit the user to just one selection 
+from a list of preset options.
+
+The following example contains three radio buttons. The last option is disabled: -->
+
+
+<div class="container border border-dark p-5 rounded mb-3">
+    <h2>Bootstrap Radio Buttons</h2>
+
+        <div class="form-check">
+            <label for="comment" class="form-check-label">
+                <input type="radio" class="form-check-input" name="optionradio">option 1
+            </label>
+        </div>
+
+        <div class="form-check">
+            <label for="comment" class="form-check-label">
+                <input type="radio" class="form-check-input" name="optionradio">option 2
+            </label>
+        </div>
+
+        <div class="form-check">
+            <label for="comment" class="form-check-label">
+                <input type="radio" class="form-check-input" name="optionradio">option 3
+            </label>
+        </div>
+        <div class="form-check">
+            <label for="comment">
+                <input type="radio" class="form-check-input" name="optionradio" disabled>option 4
+            </label>
+        </div>
+
+        <div class="form-check">
+            <input type="submit" class="btn btn-primary" value="Submit">
+        </div>
+</div>
+
+
+<!-- As with checkboxes, use the .form-check-inline class if you want the radio buttons 
+to appear on the same line: -->
+
+
+<div class="container border border-dark p-5 rounded mb-3">
+    <h2>Bootstrap Radio Buttons</h2>
+
+        <div class="form-check-inline">
+            <label for="radiobutton" class="form-check-label">
+                <input type="radio" class="form-check-input" name="optionradio">option 1
+            </label>
+        </div>
+
+        <div class="form-check-inline">
+            <label for="radiobutton" class="form-check-label">
+                <input type="radio" class="form-check-input" name="optionradio">option 2
+            </label>
+        </div>
+
+        <div class="form-check-inline">
+            <label for="radiobutton" class="form-check-label">
+                <input type="radio" class="form-check-input" name="optionradio">option 3
+            </label>
+        </div>
+        <div class="form-check-inline">
+            <label for="radiobutton">
+                <input type="radio" class="form-check-input" name="optionradio" disabled>option 4
+            </label>
+        </div>
+</div>
+
+
+<!-- Bootstrap Select List
+===========================
+
+Select lists are used if you want to allow the user to pick from multiple options.
+
+The following example contains a dropdown list (select list): -->
+
+
+
+<div class="container border border-dark p-5 rounded mb-3">
+    <h2>Bootstrap Select List</h2>
+
+        <div class="form-group">
+            <label for="selection">Select list :</label>
+            <select name="selection" class="form-control mb-3" id="selection">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+
+            <div class="form-check">
+                <input type="submit" class="btn btn-primary" value="Submit">
+            </div>
+            
+        </div>
+
+
+<hr/>
+
+    <h2>Bootstrap Select List</h2>
+
+        <div class="form-group">
+            <label for="selection">Select list :</label>
+            <select name="selection" class="form-control mb-3" id="selection" multiple>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+
+            <div class="form-check">
+                <input type="submit" class="btn btn-primary" value="Submit">
+            </div>
+        </div>
+</div>
+
+
+
+
+</body>
+</html>
