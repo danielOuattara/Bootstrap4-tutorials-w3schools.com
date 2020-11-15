@@ -1,0 +1,262 @@
+<!-----------------------------------------
+Daniel OUATTARA- daniel.ouattara_AT_gmx.com
+03 11 2020
+Boostrap 4 Tutorial : color
+https://www.w3schools.com/bootsrap4/
+------------------------------------------->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Boostrap 4 Flex</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    
+    <!-- Lign for fontawesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  </head>
+
+  <body>
+      <h1>Boostrap 4 Flex</h1><hr>
+
+    
+<!-- Bootstrap 4 Flex 
+======================
+
+Use flex classes to control the layout of Bootstrap 4 components.
+
+
+Flexbox
+========
+
+The biggest difference between Bootstrap 3 and Bootstrap 4 is that Bootstrap 4 now uses "flexbox", 
+instead of "floats", to handle the layout.
+
+The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without 
+using "float" or "positioning". 
+
+If you are new to flex, you can read about it in our CSS Flexbox Tutorial. -->
+
+
+<!--Note:  Flexbox is not supported in IE9 and earlier versions. If you require IE8-9 support, use Bootstrap 3. 
+           It is the most stable version of Bootstrap, and it is still supported by the team for critical 
+           bugfixes and documentation changes. However, no new features will be added to it.                 -->
+
+
+<!-- To create a flexbox container and to transform direct children into flex items, use the ".d-flex" class: -->
+
+
+    <div class="container-fluid bg-success p-3 text-white">
+        <h2>Flex</h2>
+        <p>To create a flexbox container and transform direct children into flex items, use the "d-flex" class:</p>
+        <div class="d-flex p-3 bg-secondary">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+    </div><hr>
+
+
+<!-- To create an inline flexbox container, use the ".d-inline-flex" class: -->
+
+<div class="container-fluid bg-success p-3 text-white">
+    <h2>Inline Flex</h2>
+    <p>To create an inline flexbox container, use the "d-inline-flex" class:</p>
+    <div class="d-inline-flex p-3 bg-secondary">
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+    </div>
+</div><br>
+
+
+<!-- Horizontal Direction
+==========================
+
+Use ".flex-row" to display the flex items horizontally (side by side). 
+This is default.
+
+Tip: Use ".flex-row-reverse" to right-align the horizontal direction: -->
+
+<div class="container-fluid bg-success p-3 text-white">
+
+    <h2>Horizontal Direction</h2>
+    
+    <p>Use ".flex-row" to make the flex items appear side by side (default):</p>   
+     <div class="d-flex p-3 bg-secondary flex-row">
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+    </div><br><br>
+
+    <p>Use ".flex-row-reverse" to right-align the direction:</p>
+    <div class="d-flex p-3 bg-secondary flex-row-reverse">
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+    </div>
+
+</div><hr>
+
+
+<!-- Vertical Direction
+========================
+
+Use ".flex-column" to display the flex items vertically (on top of each other), 
+or ".flex-column-reverse" to reverse the vertical direction: -->
+
+
+<div class="container-fluid bg-success p-3 text-white">
+
+    <h2>Vertical Direction</h2>
+    
+    <p>Use ".flex-column" to display the flex items vertically (on top of each other):</p>
+    <div class="d-flex p-3 bg-secondary flex-column">
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+    </div><br><br>
+
+    <p>Use ".flex-column-reverse" to reverse the vertical direction:</p>
+    <div class="d-flex p-3 bg-secondary flex-column-reverse">
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+    </div>
+
+</div><hr>
+
+
+<!-- Justify Content
+=====================
+
+Use the ".justify-content-*" classes to change the alignment of flex items. 
+Valid classes are start (default), end, center, between or around: -->
+
+<div class="container-fluid bg-success p-3 text-white">
+
+    <h2>Justify Content</h2>
+    <p>Use the ".justify-content-*" classes to change the alignment of flex items. 
+        Choose from start (default), end, center, between or around:</p>
+    
+    <div class="d-flex p-3 bg-secondary justify-content-start">
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+    </div><br>
+    <div class="d-flex p-3 bg-secondary justify-content-end">
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+    </div><br>
+    <div class="d-flex p-3 bg-secondary justify-content-center">
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+    </div><br>
+    <div class="d-flex p-3 bg-secondary justify-content-between">
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+    </div><br>
+    <div class="d-flex p-3 bg-secondary justify-content-around">
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+    </div><br>
+</div><hr>
+
+
+<!-- Fill / Equal Widths
+=========================
+
+Use ".flex-fill" on flex items to force them into equal widths: -->
+
+<div class="container-fluid bg-success p-3 text-white">
+
+    <h2>Fill / Equal Widths</h2>
+    <p>Use ".flex-fill" on flex items to force them into equal widths:</p>
+    
+    <div class="d-flex p-3 bg-secondary">
+        <div class="p-2 flex-fill bg-info">Flex item 1</div>
+        <div class="p-2 flex-fill bg-warning">Flex item 2</div>
+        <div class="p-2 flex-fill bg-primary">Flex item 3</div>
+    </div><br>
+
+    <p>Example Without .flex-fill:</p>
+    <div class="d-flex p-3 bg-secondary">
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+    </div><br>
+</div><hr>
+
+
+<!-- Grow
+==========
+
+Use ".flex-grow-1" on a flex item to take up the rest of the space. 
+In the example below, the first two flex items take up their necessary space, 
+while the last item takes up the rest of the available space:-->
+
+<div class="container-fluid bg-success p-3 text-white">
+
+    <h2>Grow</h2>
+    <p>Use ".flex-grow-1" on a flex item to take up the rest of the space:</p>
+    
+    <div class="d-flex p-3 bg-secondary">
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary flex-grow-1">Flex item 3</div>
+    </div><br>
+    
+    <p>Use ".flex-grow-1" on a flex items 2 & 3 to take up the rest of the space:</p>
+    <div class="d-flex p-3 bg-secondary">
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning flex-grow-1">Flex item 2</div>
+        <div class="p-2 bg-primary flex-grow-1">Flex item 3</div>
+    </div><br>
+
+    <p>Example without .flex-grow-1:</p>
+    <div class="d-flex p-3 bg-secondary">
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+    </div><br>
+</div><hr>
+
+
+<!-- Tip: Use .flex-shrink-1 on a flex item to make it shrink if necessary.  -->
+
+<div class="container-fluid bg-success p-3 text-white">
+
+    <h2>shrink</h2>
+    <p>Use ".flex-shrink-1" on a flex item</p>
+    
+    <div class="d-flex p-3 bg-secondary">
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary flex-shrink-1">Flex item 3</div>
+    </div><br>
+    
+    <p>Use ".flex-shrink-1" on a flex items 2 & 3</p>
+    <div class="d-flex p-3 bg-secondary">
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning flex-shrink-1">Flex item 2</div>
+        <div class="p-2 bg-primary flex-shrink-1">Flex item 3</div>
+    </div><br>
+
+    <p>Example without .flex-shrink-1:</p>
+    <div class="d-flex p-3 bg-secondary">
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+    </div><br>
+</div><hr>
+
+
+</body>
+</html>

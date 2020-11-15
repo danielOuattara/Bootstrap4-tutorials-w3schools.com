@@ -37,7 +37,7 @@ container classes available:
 Fixed Container
 ===============
 
-Use the '.container' class to create a responsive, 'fixed-width 'container.
+Use the '.container' class to create a responsive fixed-width container.
 
 Note:  Its width (max-width) will change on different screen sizes:
 -----
@@ -78,12 +78,12 @@ that will always span the entire width of the screen (width is always 100%): -->
 <!-- Container Padding
 ======================
 
-By default containers have 15px left and right padding, with no top or 
+By default both containers have 15px left and right padding, with no top or 
 bottom padding (padding: 0 15px). Therefore, we often use spacing utilities, such as extra
 padding and margins to make them look even better. For example, '.pt-3'
  means "add a top padding of 16px": -->
 
-        <div class="container-fluid pt-3 bg-success">
+        <div class="container-fluid pt-3 bg-warning">
             <h2>Modified container top padding Page</h2>
             <p>This container has a top padding of 16 pixels (.pt-3).</p>
             <p>Try to remove the .pt-3 class to see the difference.</p>
@@ -96,7 +96,7 @@ padding and margins to make them look even better. For example, '.pt-3'
 Other utilities, such as 'borders' and 'colors', are also often used 
 together with containers: -->
 
-      <div class="container p-3 my-3 border">
+      <div class="container p-3 my-5 border border-primary ">
           <h2>Bootstrap 4: padding, margin, border</h2>
           <p>This container has some extra padding and margins and a border.</p>
       </div>
@@ -148,33 +148,33 @@ Class            Extra small  Small    Medium   Large    Extra large
 ------------------------------------------------------------------------>
 
 
-        <div class="container">
+        <div class="container border border-dark">
             <h2>Responsive Containers</h2>
             <p>Resize the browser window to see the effect.</p>
         </div>
         
-        <div class="container-sm border">.container-sm
+        <div class="container-sm mt-3 border border-dark">.container-sm
             <h2>Responsive Containers: -sm</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing 
                 elit...</p>
             <p>Ut enim ad minim veniam, quis nostrud exercitation 
                 ullamco laboris...</p>
         </div>
-        <div class="container-md mt-3 border">.container-md
+        <div class="container-md mt-3 border border-dark">.container-md
             <h2>Responsive Containers: -md</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing 
                 elit...</p>
             <p>Ut enim ad minim veniam, quis nostrud exercitation 
                 ullamco laboris...</p>
         </div>
-        <div class="container-lg mt-3 border">.container-lg
+        <div class="container-lg mt-3 border border-dark">.container-lg
             <h2>Responsive Containers: -lg</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing 
                 elit...</p>
             <p>Ut enim ad minim veniam, quis nostrud exercitation 
                 ullamco laboris...</p>
         </div>
-        <div class="container-xl mt-3 border">.container-xl
+        <div class="container-xl mt-3 border border-dark">.container-xl
             <h2>Responsive Containers: -xl</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing 
                 elit...</p>

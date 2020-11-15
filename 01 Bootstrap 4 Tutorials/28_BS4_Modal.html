@@ -1,0 +1,384 @@
+<!-----------------------------------------
+Daniel OUATTARA- daniel.ouattara_AT_gmx.com
+03 11 2020
+Boostrap 4 Tutorial : color
+https://www.w3schools.com/bootsrap4/
+------------------------------------------->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Boostrap 4 Modal</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    
+    <!-- Lign for fontawesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  </head>
+
+  <body>
+      <h1>Boostrap 4 Modal</h1><hr>
+
+<!--The Modal component is a dialog box/popup window that is displayed on top of the current page: -->
+
+
+    <div class="container m-5">
+        <h2>Modal Example</h2>
+
+        <!-- button to open the modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_1">Open Modal 1</button>
+
+        <!-- The modal itself -->
+        <div class="modal" id="modal_1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- modal header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Modal Heading</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- modal body -->
+                    <div class="modal-body">
+                        Modal body 1...
+                    </div>
+
+                    <!-- modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><hr>
+
+
+<!-- Add animation
+===================
+
+Use the ".fade" class to add a fading effect when opening and closing the modal: -->
+
+
+    <div class="container m-5">
+        <h2>Modal Animation with fade effect</h2>
+
+        <!-- button to open the modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_2">Open Modal 2</button>
+
+        <!-- The modal itself -->
+        <div class="modal fade" id="modal_2">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- modal header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Modal Heading</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- modal body -->
+                    <div class="modal-body">
+                        Modal body 2...
+                    </div>
+
+                    <!-- modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><hr>
+
+
+<!-- Modal Size
+================
+
+Change the size of the modal by adding the ".modal-sm" class for small modals, 
+".modal-lg" class for large modals, or ".modal-xl" for extra large modals.
+
+Add the size class to the <div> element with class .modal-dialog: 
+    
+NOTE: By default, modals are "medium" in size.
+-----                                                                     -->
+
+    <div class="container m-5">
+        <h2>Modal Size: modal-sm</h2>
+
+        <!-- button to open the modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_3">Open Modal 3</button>
+
+        <!-- The modal itself -->
+        <div class="modal fade" id="modal_3">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+
+                    <!-- modal header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Modal Heading</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- modal body -->
+                    <div class="modal-body">
+                        Modal body 3...
+                    </div>
+
+                    <!-- modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container m-5">
+        <h2>Modal size: modal-lg</h2>
+
+        <!-- button to open the modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_4">Open Modal 4</button>
+
+        <!-- The modal itself -->
+        <div class="modal fade" id="modal_4">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+
+                    <!-- modal header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Modal Heading</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- modal body -->
+                    <div class="modal-body">
+                        Modal body 4...
+                    </div>
+
+                    <!-- modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container m-5">
+        <h2>Modal Size: modal-xl</h2>
+
+        <!-- button to open the modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_5">Open Modal 5</button>
+
+        <!-- The modal itself -->
+        <div class="modal fade" id="modal_5">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+
+                    <!-- modal header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Modal Heading</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- modal body -->
+                    <div class="modal-body">
+                        Modal body 5...
+                    </div>
+
+                    <!-- modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <hr>
+
+
+<!-- Centered Modal
+====================
+
+Center the modal vertically and horizontally within the page, with the ".modal-dialog-centered" class: -->
+
+
+    <div class="container m-5">
+        <h2>Centered Modal modal-sm</h2>
+
+        <!-- button to open the modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_6">Open Modal 6</button>
+
+        <!-- The modal itself -->
+        <div class="modal fade" id="modal_6">
+            <div class="modal-dialog modal-sm modal-dialog-centered">
+                <div class="modal-content">
+
+                    <!-- modal header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Modal Heading</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- modal body -->
+                    <div class="modal-body">
+                        Modal body 6...
+                    </div>
+
+                    <!-- modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container m-5">
+        <h2>Centered Modal modal-lg</h2>
+
+        <!-- button to open the modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_7">Open Modal 7</button>
+
+        <!-- The modal itself -->
+        <div class="modal fade" id="modal_7">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+
+                    <!-- modal header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Modal Heading</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- modal body -->
+                    <div class="modal-body">
+                        Modal body 7...
+                    </div>
+
+                    <!-- modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><hr>
+
+
+<!-- Scrolling Modal
+=====================
+
+When you have alot of content inside the modal, a scrollbar is added to the page. 
+See the examples below to understand it: -->
+
+
+<div class="container m-5">
+    <h2>Scrolling Modal </h2>
+
+    <!-- button to open the modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_8">Open Modal 8</button>
+
+    <!-- The modal itself -->
+    <div class="modal fade" id="modal_8">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+                <!-- modal header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Modal Heading</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- modal body -->
+                <div class="modal-body">
+                    Modal body 5... <br> 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
+                </div>
+
+                <!-- modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><hr>
+
+
+<!-- However, it is possible to only scroll inside the modal, instead of the page itself, 
+by adding ".modal-dialog-scrollable" to ".modal-dialog": -->
+
+    <div class="container m-5">
+        <h2>Scrolling Modal </h2>
+
+        <!-- button to open the modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_9">Open Modal 9</button>
+
+        <!-- The modal itself -->
+        <div class="modal fade" id="modal_9">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+
+                    <!-- modal header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Modal Heading</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- modal body -->
+                    <div class="modal-body">
+                        Modal body 5... <br> 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
+                    </div>
+
+                    <!-- modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+</html>
