@@ -1,47 +1,385 @@
-<div class="container m-5">
-    <h2>Scrolling Modal </h2>
+<!-----------------------------------------
+Daniel OUATTARA- daniel.ouattara_AT_gmx.com
+03 11 2020
+Boostrap 4 Tutorial : color
+https://www.w3schools.com/bootsrap4/
+------------------------------------------->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Boostrap 4 Nav</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width
+     initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  </head>
 
-    <!-- button to open the modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_8">Open Modal 8</button>
+  <body>
+      <h1>Boostrap 4 Nav</h1>
 
-    <!-- The modal itself -->
-    <div class="modal fade" id="modal_8">
-        <div class="modal-dialog modal-lg .modal-dialog-centered">
-            <div class="modal-content">
 
-                <!-- modal header -->
-                <div class="modal-header">
-                    <h4 class="modal-title">Modal Heading</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
+<!-- If you want to create a simple horizontal menu, add the ".nav" class to a <ul> element, 
+    followed by ".nav-item" for each <li> and add the ".nav-link" class to their anchor: -->
 
-                <!-- modal body -->
-                <div class="modal-body">
-                    Modal body 5... <br> 
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non voluptatum? Quibusdam expedita inventore sint aspernatur, rem impedit temporibus esse dicta, sequi eum, vel iusto! Sunt cum vel consectetur neque.
-                </div>
-
-                <!-- modal footer -->
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="container border border-dark p-5 rounded mb-3">
+    <h2>Nav Menus</h2>
+    <ul class="nav">
+        <li class="nav-item">
+            <a href="#" class="nav-link">Link1</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Link2</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Link3</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link disabled">Link4</a>
+        </li>
+    </ul>
 </div>
+
+
+<!-- Aligned Nav
+=================
+
+Add ".justify-content-center" class to center the nav, and ".justify-content-end" class 
+to right-align the nav. -->
+
+<div class="container border border-dark p-5 rounded mb-3">
+    <h2>Centered and Right Aligned Nav Menus</h2>
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a href="#" class="nav-link">Link1</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Link2</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Link3</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link disabled">Link4</a>
+        </li>
+    </ul><hr>
+
+    <ul class="nav justify-content-end">
+        <li class="nav-item">
+            <a href="#" class="nav-link">Link1</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Link2</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Link3</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link disabled">Link4</a>
+        </li>
+    </ul>
+</div>
+
+
+<!-- Vertical Nav
+=================
+
+Add the ".flex-column" class to create a vertical nav: -->
+
+<div class="container border border-dark p-5 rounded mb-3">
+    <h2>Vertical Nav Menus</h2>
+    <ul class="nav flex-column">
+        <li class="nav-item">
+            <a href="#" class="nav-link">Link1</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Link2</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Link3</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link disabled">Link4</a>
+        </li>
+    </ul>
+</div>
+
+
+<!-- Tabs
+==========
+
+Turn the nav menu into navigation tabs with ".nav-tabs" class. 
+Add the ".active" class to the active/current link. 
+If you want the tabs to be togglable, see the last example on this page. -->
+
+<div class="container border border-dark p-5 rounded mb-3">
+    <h2>Tab Menus</h2>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a href="#" class="nav-link ">Link1</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Link2</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Link3</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link disabled">Link4</a>
+        </li>
+    </ul><hr/>
+
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a href="#" class="nav-link active ">Link1</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Link2</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Link3</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link disabled">Link4</a>
+        </li>
+    </ul><hr/>
+
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a href="#" class="nav-link">Link1</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link active">Link2</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Link3</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link disabled">Link4</a>
+        </li>
+    </ul><hr/>
+
+    <ul class="nav nav-tabs flex-column">
+        <li class="nav-item">
+            <a href="#" class="nav-link active">Link1</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link active">Link2</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Link3</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link disabled">Link4</a>
+        </li>
+    </ul>
+</div>
+
+
+<!-- Pills
+===========
+
+Turn the nav menu into navigation pills with the ".nav-pills" class. 
+If you want the pills to be togglable, see the last example on this page. -->
+
+<div class="container border border-dark p-5 rounded mb-3">
+    <h2>Pills Menus</h2>
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a href="#" class="nav-link active">Link1</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Link2</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Link3</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link disabled">Link4</a>
+        </li>
+    </ul>
+</div>
+
+
+<!-- Justified Tabs/pills
+=========================
+
+Justify the tabs/pills with the ".nav-justified" class (equal width): -->
+
+<div class="container border border-dark p-5 rounded mb-3">
+    <h2>Justify Tabs / Pills Menus</h2>
+    <ul class="nav nav-tabs nav-justified">
+        <li class="nav-item">
+            <a href="#" class="nav-link active">Link1</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Link2</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Link3</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link disabled">Link4</a>
+        </li>
+    </ul><hr/>
+
+    <ul class="nav nav-pills nav-justified">
+        <li class="nav-item">
+            <a href="#" class="nav-link active">Link1</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Link2</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Link3</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link disabled">Link4</a>
+        </li>
+    </ul><hr/>
+</div>
+
+
+<!-- Pills with Dropdown
+========================= -->
+
+<div class="container border border-dark p-5 rounded mb-3">
+    <h2>Pills with Dropdown</h2>
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a href="#" class="nav-link active">Active</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Link2</a>
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Link2 A</a>
+                <a href="#" class="dropdown-item">Link2 B</a>
+                <a href="#" class="dropdown-item">Link2 C</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Link3</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link disabled">Link4</a>
+        </li>
+    </ul><hr/>
+</div>
+
+
+<!-- Tabs with Dropdown
+======================== -->
+
+<div class="container border border-dark p-5 rounded mb-3">
+    <h2>Tabs with Dropdown</h2>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a href="#" class="nav-link active">Active</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Link2</a>
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Link2 A</a>
+                <a href="#" class="dropdown-item">Link2 B</a>
+                <a href="#" class="dropdown-item">Link2 C</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Link3</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link disabled">Link4</a>
+        </li>
+    </ul>
+</div><hr/>
+
+
+<!-- Toggleable / Dynamic Tabs
+============================== 
+
+To make the tabs toggleable, add the |data-toggle="tab"| attribute to each link. 
+Then add a ".tab-pane" class with a unique ID for every tab and wrap them inside a 
+<div> element with class ".tab-content".
+
+If you want the tabs to fade in and out when clicking on them, add the ".fade" class to ".tab-pane"-->
+
+<div class="container border border-dark p-5 rounded mb-3">
+    <h2>Toggleable / Dynamic Tabs</h2>
+
+    <!-- Nav Tabs -->
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a href="#home" class="nav-link active">Active</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a href="#menu_1" class="nav-link" data-toggle="tab">Link2</a>
+        </li>
+        <li class="nav-item">
+            <a href="#menu_2" class="nav-link" data-toggle="tab">Link3</a>
+        </li>
+        <li class="nav-item">
+            <a href="#menu_3" class="nav-link" data-toggle="tab">Link4</a>
+        </li>
+    </ul>
+
+    <!-- Nav Panes for Na Panes-->
+
+    <div class="tab-content">
+        <div class="tab-pane container active" id="home">
+            HOME <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+
+        <div class="tab-pane container fade" id= "menu_1">
+           Menu-1 <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+
+        <div class="tab-pane container fade" id= "menu_2">
+             Menu-2 <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+
+        <div class="tab-pane container fade" id= "menu_3">
+            Menu-3 <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+    </div> <hr/>
+
+
+    <!-- Nav Pills -->
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a href="#home2" class="nav-link active">Active</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a href="#menu_11" class="nav-link" data-toggle="tab">Link2</a>
+        </li>
+        <li class="nav-item">
+            <a href="#menu_22" class="nav-link" data-toggle="tab">Link3</a>
+        </li>
+        <li class="nav-item">
+            <a href="#menu_33" class="nav-link" data-toggle="tab">Link4</a>
+        </li>
+    </ul>
+
+    <!-- Nav Panes for nav Tabs -->
+    <div class="tab-content">
+        <div class="tab-pane container active" id="home2">
+            Home 2: <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+
+        <div class="tab-pane container fade" id= "menu_11">
+            Menu 11: <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+
+        <div class="tab-pane container fade" id= "menu_22">
+            Menu 22: <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+
+        <div class="tab-pane container fade" id= "menu_33">
+            Mennu 33: <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+    </div>
+</div><hr/>
+  
+</body>
+</html>
